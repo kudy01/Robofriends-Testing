@@ -1,8 +1,9 @@
-import { shallow } from 'enzyme';
-import React from 'react';
-import scroll from '../scroll';
+import React from "react";
+import { create } from "react-test-renderer";
+import Scroll from '../Scroll';
 
-it('Expect to render scroll Component', () => {
-	const wrapper = shallow(<scroll />);
-	expect(wrapper).toMatchSnapshot()
+
+it('Expect to render Scroll Component', () => {
+	expect(create(<Scroll />).toJSON()).toMatchSnapshot()
 })
+
