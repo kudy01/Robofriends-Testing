@@ -1,7 +1,7 @@
 import React from "react";
-import { create } from "react-test-renderer";
+import { shallow } from "enzyme";
 import Card from "../Card";
 
-it("Expect to render CardList Component", () => {
-  expect(create(<Card />).toJSON()).toMatchSnapshot(); 
+it("Expect to render Card Component", () => {
+  expect(shallow(<Card />)).toMatchSnapshot(); 
 }); 

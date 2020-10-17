@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Expect to render CardList Component 1`] = `
+exports[`Expect to render Card Component 1`] = `
 <div
   className="tc bg-light-green dib br3 pa3 ma3 grow bw2 shadow-5"
 >
