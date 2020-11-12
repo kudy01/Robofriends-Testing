@@ -1,9 +1,9 @@
 import React from "react";
 import { create } from "react-test-renderer";
-import Scroll from '../Scroll';
+import scroll from '../scroll';
 
 
 it('Expect to render Scroll Component', () => {
-	expect(create(<Scroll />).toJSON()).toMatchSnapshot()
+	expect(create(<scroll />).toJSON()).toMatchSnapshot()
 })
 
