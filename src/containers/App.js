@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import CardList from "../components/CardList";
 import SearchBox from "../components/SearchBox";
-import Scroll1 from "../components/scroll1";
+import Scroll from "../components/scroll";
 import ErrorBoundary from "../components/ErrorBoundary";
 import "./App.css";
 
@@ -31,11 +31,11 @@ const App = () => {
     <div className="tc">
       <h1 className="f1">RoboFriends</h1>
       <SearchBox searchChange={onSearchChange} />
-      <Scroll1>
+      <Scroll>
         <ErrorBoundary>
           <CardList robots={filteredRobots} />
         </ErrorBoundary>
-      </Scroll1>
+      </Scroll>
     </div>
   );
 };
